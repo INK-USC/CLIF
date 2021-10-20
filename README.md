@@ -3,7 +3,7 @@
 This repo is for Findings at EMNLP 2021 paper: Learn Continually, Generalize Rapidly: Lifelong Knowledge Accumulation for Few-shot Learning. Code clean-up is still in progress.
 
 ## Data
-Please extract the downloaded data and place it under `PROJECT_DIR/datasets`. Our training data stream and few-shot datasets are
+Please extract the downloaded data and place it under `PROJECT_DIR/datasets`. Our training data stream and few-shot datasets are curated from
 https://github.com/iesl/leopard and https://github.com/INK-USC/CrossFit.
 
 Full dataset link:
