@@ -6,6 +6,12 @@ This repo is for Findings at EMNLP 2021 paper: Learn Continually, Generalize Rap
 Please extract the downloaded data and place it under `PROJECT_DIR/datasets`. Our training data stream and few-shot datasets are curated from
 https://github.com/iesl/leopard and https://github.com/INK-USC/CrossFit.
 
+The directory structure is
+```
+PROJECT_DIR/datasets/crossfit_data/ + 55 classification tasks from the link above, e.g. PROJECT_DIR/datasets/crossfit_data/anli
+PROJECT_DIR/datasets/leopard/ + 17 tasks from the link above, e.g. PROJECT_DIR/datasets/crossfit_data/airline
+```
+
 
 ## Environment
 Our code uses PyTorch 1.7.1. To allow fp16 training, you should also install [apex](https://github.com/NVIDIA/apex).
