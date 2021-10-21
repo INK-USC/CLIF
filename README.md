@@ -6,10 +6,6 @@ This repo is for Findings at EMNLP 2021 paper: Learn Continually, Generalize Rap
 Please extract the downloaded data and place it under `PROJECT_DIR/datasets`. Our training data stream and few-shot datasets are curated from
 https://github.com/iesl/leopard and https://github.com/INK-USC/CrossFit.
 
-Full dataset link:
-[Google drive](https://drive.google.com/file/d/1KPyhkwNS2aK7ghCN4AxmHWsajdDggAoJ/view?usp=sharing)
-
-
 
 ## Environment
 Our code uses PyTorch 1.7.1. To allow fp16 training, you should also install [apex](https://github.com/NVIDIA/apex).
