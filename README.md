@@ -8,8 +8,8 @@ https://github.com/iesl/leopard and https://github.com/INK-USC/CrossFit.
 
 The directory structure is
 ```
-PROJECT_DIR/datasets/crossfit_data/ + 55 classification tasks from the link above, e.g. PROJECT_DIR/datasets/crossfit_data/anli
-PROJECT_DIR/datasets/leopard/ + 17 tasks from the link above, e.g. PROJECT_DIR/datasets/crossfit_data/airline
+PROJECT_DIR/datasets/crossfit_data/data/ + 55 classification tasks from the link above, e.g. PROJECT_DIR/datasets/crossfit_data/data/anli
+PROJECT_DIR/datasets/leopard/ + 17 tasks from the link above, e.g. PROJECT_DIR/datasets/leopard/airline
 ```
 
 
