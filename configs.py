@@ -243,7 +243,6 @@ def merge_args_into_config(args, config):
     config.limit_label_vocab_space = args.limit_label_vocab_space
     config.skip_adapter = args.skip_adapter
     config.task_emb_dim = args.task_emb_dim
-    config.hnet_init_method = args.hnet_init_method
     config.train_task_embs = args.train_task_embs
     config.task_encoder_model = args.task_encoder_model
     config.train_flex = args.train_flex

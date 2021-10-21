@@ -269,7 +269,7 @@ def train(args, config, logger, model, tokenizer, train_dataloader, task_id, opt
                 logger.info("Stop training because loss=%s" % (loss.data))
                 stop_training = True
                 break
-            train_losses.append(loss.detach().czrpu())
+            train_losses.append(loss.detach().cpu())
 
             if global_step % args.gradient_accumulation_steps == 0:
                 torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)

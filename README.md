@@ -23,12 +23,12 @@ Our code uses PyTorch 1.7.1. To allow fp16 training, you should also install [ap
 reg=0.01
 lr=1e-4
 seed=0
-python run_model.py --tasks cola sst2 mrpc stsb qqp mnli qnli rte wnli \ 
---output_dir runs/glue_cfew_10k_choice_hnet_hardlong_sample_reg${reg}_s64_d256_limit/${lr}/${seed} \ 
---do_train --eval_period 100000 --eval_at_epoch_end  --wait_step 3 --num_train_epochs 100 --seed ${seed} \ 
---train_batch_size 64 --gradient_accumulation_steps 2 --learning_rate ${lr} --max_output_length 8 \ 
---generator_hdim 32 --example_limit 100 --train_limit 10000 --cl_method hnet --h_l2reg ${reg} \ 
---adapter_dim 256 --adapter_dim_final 64  --hard_long_term  --limit_label_vocab_space \ 
+python run_model.py --tasks cola sst2 mrpc stsb qqp mnli qnli rte wnli \
+--output_dir runs/glue_cfew_10k_choice_hnet_hardlong_sample_reg${reg}_s64_d256_limit/${lr}/${seed} \
+--do_train --eval_period 100000 --eval_at_epoch_end  --wait_step 3 --num_train_epochs 100 --seed ${seed} \
+--train_batch_size 64 --gradient_accumulation_steps 2 --learning_rate ${lr} --max_output_length 8 \
+--generator_hdim 32 --example_limit 100 --train_limit 10000 --cl_method hnet --h_l2reg ${reg} \
+--adapter_dim 256 --adapter_dim_final 64  --hard_long_term  --limit_label_vocab_space \
 --sample_batch --scale_loss --stm_size 64
 ```
 
@@ -36,12 +36,12 @@ python run_model.py --tasks cola sst2 mrpc stsb qqp mnli qnli rte wnli \
 
 ```
 python run_model.py --task_collection leopard --k_shot 16 --max_input_length 100  \
---output_dir /runs/glue_cfew_10k_choice_hnet_hardlong_sample_reg${reg}_s64_d256_limit/${lr}/${seed} \ 
---do_few_shot_predict --eval_period 100000 --eval_at_epoch_end  --wait_step 3 --num_train_epochs 100 \ 
+--output_dir /runs/glue_cfew_10k_choice_hnet_hardlong_sample_reg${reg}_s64_d256_limit/${lr}/${seed} \
+--do_few_shot_predict --eval_period 100000 --eval_at_epoch_end  --wait_step 3 --num_train_epochs 100 \
 --seed ${seed} --train_batch_size 64 --predict_batch_size 16 --few_shot_train_batch_size 16 \
 --few_shot_wait_step 100000 --few_shot_num_train_epochs 800 --wait_step 3 --gradient_accumulation_steps 4 \
 --scale_by_accumulation --learning_rate ${lr} --max_output_length 8  --generator_hdim 32 \
---example_limit 100 --train_limit 10000 --cl_method naive --h_l2reg ${reg} --adapter_dim 256 \ 
+--example_limit 100 --train_limit 10000 --cl_method naive --h_l2reg ${reg} --adapter_dim 256 \
 --adapter_dim_final 64 --hard_long_term --limit_label_vocab_space --no_short_term --long_term_task_emb_num 9 \
 --postfix "naive_16shot"  --sample_batch --stm_size 64 --few_shot_eval_period 200
 ```
