@@ -12,6 +12,7 @@ PROJECT_DIR/datasets/crossfit_data/data/ + 55 classification tasks from the link
 PROJECT_DIR/datasets/leopard/ + 17 tasks from the link above, e.g. PROJECT_DIR/datasets/leopard/airline
 ```
 
+Full dataset: [Google Drive](https://drive.google.com/file/d/1KPyhkwNS2aK7ghCN4AxmHWsajdDggAoJ/view?usp=sharing)
 
 ## Environment
 Our code uses PyTorch 1.7.1. To allow fp16 training, you should also install [apex](https://github.com/NVIDIA/apex).
